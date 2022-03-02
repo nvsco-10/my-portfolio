@@ -127,18 +127,18 @@ nav li {
 }
 
 .featured-col.col-1, .featured-col.col-3 {
-    width: 35%;
+    flex-basis: 35%;
 }
 
 .featured-col.col-1 {
-    background-image: url('/homework/my-portfolio/assets/img/fallout.jpg');
+    background-image: url('/assets/img/fallout.jpg');
     background-position: center;
     background-size: cover;
     margin-right: 1rem;
 }
 
 .featured-col.col-2 {
-    width: 30%;
+    flex-basis: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -157,13 +157,13 @@ nav li {
 }
 
 .featured-img-box.box1 {
-    background-image: url('/homework/my-portfolio/assets/img/fallout1.jpg');
+    background-image: url('/assets/img/fallout1.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .featured-img-box.box2 {
-    background-image: url('/homework/my-portfolio/assets/img/fallout2.jpg');
+    background-image: url('/assets/img/fallout2.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -181,20 +181,20 @@ nav li {
 
 
 .project-card {
-    /* width: 25%; */
     height: 450px;
     display: flex;
-    flex: 1 0 25%;
+    flex-basis: 25%;
     flex-direction: column;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 .project-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .proj1 {
-    background-image: linear-gradient(40deg, rgba(28, 255, 28, 0.883), rgba(0,255,0,0) 30%), url('/homework/my-portfolio/assets/img/passwordgenerator.jpg');
+    background-image: linear-gradient(40deg, rgba(28, 255, 28, 0.883), rgba(0,255,0,0) 30%), url('/assets/img/passwordgenerator.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -246,21 +246,65 @@ span.category {
 }
 
 .proj2 {
-    background-image: linear-gradient(350deg, rgba(255, 251, 28, 0.883), rgba(0,255,0,0) 20%), url('/homework/my-portfolio/assets/img/weather.jpg');
+    background-image: linear-gradient(350deg, rgba(255, 251, 28, 0.883), rgba(0,255,0,0) 20%), url('/assets/img/weather.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .proj3 {
-    background-image: linear-gradient(350deg, rgba(1, 22, 22, 0.883), rgba(7, 26, 7, 0.5) 80%), url('/homework/my-portfolio/assets/img/techblog.jpg');
+    background-image: linear-gradient(350deg, rgba(1, 22, 22, 0.883), rgba(7, 26, 7, 0.5) 80%), url('/assets/img/techblog.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .proj4 {
-    background-image: linear-gradient(350deg, rgba(255, 28, 58, 0.883), rgba(0,255,0,0) 40%), url('/homework/my-portfolio/assets/img/chat.jpeg');
+    background-image: linear-gradient(350deg, rgba(255, 28, 58, 0.883), rgba(0,255,0,0) 40%), url('/assets/img/chat.jpeg');
     background-position: center;
     background-size: cover;
+}
+
+@media (max-width: 985px) {
+    .featured-project-row {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .featured-col.col-1 {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .featured-col.col-2 {
+        flex-basis: 40%;
+    }
+
+    .featured-col.col-3 {
+        flex-basis: 60%;
+    }
+
+    .project-card {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 580px) {
+    .featured-col.col-2 {
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+
+    .featured-img-box {
+        width: 50%;
+    }
+
+    .project-card {
+        flex-basis: 100%;
+    }
+
+    .featured-col.col-3 {
+        flex-basis: 100%;
+    }
+
 }
 
 /* ------------- CONTACT SECTION ------------ */
@@ -288,3 +332,4 @@ span.category {
 .fa-brands {
     padding-inline: 1em;
 }
+
