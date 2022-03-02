@@ -36,6 +36,12 @@ p {
     opacity: 0.5;
 }
 
+@media (max-width: 580px) {
+    .section-heading {
+        font-size: 1.8rem;
+    }
+}
+
 /* ------------- HEADER SECTION ------------- */
 
 header {
@@ -56,8 +62,15 @@ header {
 
 nav li {
     display: inline;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5em 1.5em;
     font-size: 1.2rem;
+}
+
+@media (max-width: 580px) {
+    nav li {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+    }
 }
 
 /* ------------- ABOUT SECTION ------------- */
@@ -79,6 +92,11 @@ nav li {
 
 .intro h1 {
     font-size: 6rem;
+    color: rgb(87, 177, 219);
+}
+
+span.bracket {
+    color: gray;
 }
 
 .intro h2 {
@@ -88,6 +106,31 @@ nav li {
 
 .intro-text {
     margin: 2rem 3rem;
+    text-align: justify;
+}
+
+@media (max-width: 580px) {
+    .intro {
+        width: 80%;
+    }
+
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro h1 {
+        font-size: 4rem;
+    }
+
+    .intro-text {
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 985px) {
+    .intro h1 {
+        font-size: 5rem;
+    }
 }
 
 /* ------------- PROJECTS SECTION ------------ */
@@ -176,7 +219,7 @@ nav li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5rem 0;
+    margin: 5rem 0 4rem;
 }
 
 
@@ -309,27 +352,74 @@ span.category {
 
 /* ------------- CONTACT SECTION ------------ */
 
+#contact {
+    padding-bottom: 5rem;
+    width: 55%;
+    margin-inline: auto;
+}
+
+.avatar {
+    background-image: url('/assets/img/avatar.png');
+    background-size: cover;
+    background-color: rgb(180, 183, 206);
+    background-blend-mode: multiply;
+    opacity: 0.8;
+    border-radius: 100%;
+    border: solid rgb(233, 223, 223) 1px;
+    width: 15rem;
+    height: 15rem;
+    margin-right: 3rem;
+}
+
+.contact-container {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+}
+
 .contact-info {
-    margin: 3rem auto;
-    text-align: center;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
 }
 
 .email {
+    width: 100%;
+    text-align: center;
     letter-spacing: 0.5rem;
-    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: inherit;
 }
 
 .socials {
     margin: 2rem 0;
     font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    font-size: inherit;
 }
 
 .social-links {
-    padding-inline: 3rem;
+    padding-inline: 1rem;
+    margin-inline: 1rem;
     letter-spacing: 0.3em;
 }
 
 .fa-brands {
-    padding-inline: 1em;
+    padding-right: 1em;
 }
 
+@media (max-width: 985px) {
+    #contact {
+        width: 70%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .avatar {
+        margin-inline: auto;
+    }
+}
