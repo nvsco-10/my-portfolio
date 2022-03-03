@@ -67,6 +67,7 @@ header {
     letter-spacing: 0.3rem;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -136,7 +137,7 @@ span.bracket {
 }
 
 /* special breakpoint for intro section */
-@media (max-width: 410px) {
+@media (max-width: 411px) {
 
     .intro-img {
         max-width: 8rem;
@@ -157,7 +158,7 @@ span.bracket {
 
 }
 
-@media (min-width: 411px) and (max-width: 580px) {
+@media (min-width: 412px) and (max-width: 580px) {
     .intro {
         width: 80%;
     }
