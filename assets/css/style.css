@@ -134,6 +134,7 @@ span.bracket {
 .intro-text {
     margin: 2rem 3rem;
     text-align: justify;
+    font-size: 1.4rem;
 }
 
 /* special breakpoint for older mobile phones (smaller screens) */
