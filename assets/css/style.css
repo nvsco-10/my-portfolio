@@ -136,12 +136,12 @@ span.bracket {
     text-align: justify;
 }
 
-/* special breakpoint for intro section */
+/* special breakpoint for older mobile phones (smaller screens) */
 @media (max-width: 411px) {
 
     .intro-img {
-        max-width: 8rem;
-        top: -25%;
+        max-width: 6rem;
+        top: -15%;
     }
     
     .intro h2 {
