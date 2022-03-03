@@ -101,6 +101,15 @@ nav li {
 
 .intro {
     width: 70%;
+    position: relative;
+}
+
+.intro-img {
+    max-width: 15rem;
+    position: absolute;
+    opacity: 0.2;
+    left: 0%;
+    top: -40%;
 }
 
 .intro span {
@@ -126,9 +135,36 @@ span.bracket {
     text-align: justify;
 }
 
-@media (max-width: 580px) {
+/* special breakpoint for intro section */
+@media (max-width: 410px) {
+
+    .intro-img {
+        max-width: 8rem;
+        top: -25%;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro-text {
+        margin: 1rem;
+    }
+
+}
+
+@media (min-width: 411px) and (max-width: 580px) {
     .intro {
         width: 80%;
+    }
+
+    .intro-img {
+        max-width: 10rem;
+        top: -25%;
     }
 
     .intro h2 {
