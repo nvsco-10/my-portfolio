@@ -177,6 +177,8 @@ span.category {
     letter-spacing: 0.2rem;
 }
 
+/* featured project sub-section */
+
 .featured-project-row {
     width: 80%;
     display: flex;
@@ -212,6 +214,18 @@ span.category {
     flex-direction: column;
 }
 
+.featured-img-box.box1 {
+    background-image: url('../img/fallout1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.featured-img-box.box2 {
+    background-image: url('../img/fallout2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 .featured-col.col-3 {
     text-align: center;
     padding: 2em;
@@ -223,18 +237,6 @@ span.category {
 
 .featured-img-box {
     height: 50%;
-}
-
-.featured-img-box.box1 {
-    background-image: url('../img/fallout1.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-.featured-img-box.box2 {
-    background-image: url('../img/fallout2.jpg');
-    background-position: center;
-    background-size: cover;
 }
 
 /* other projects sub-section */
