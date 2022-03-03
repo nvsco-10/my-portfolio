@@ -168,14 +168,23 @@ span.bracket {
     text-align: justify;
 }
 
+.tech-categories {
+    background-color: var(--categories-color);
+}
+
+span.category {
+    margin-inline: 0.6rem;
+    letter-spacing: 0.2rem;
+}
+
 .featured-project-row {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 8rem 0;
+    position: relative;
 }
-
 
 .featured-col {
     height: 450px;
@@ -247,16 +256,11 @@ span.bracket {
     flex-direction: column;
     justify-content: space-between;
     transition: 0.3s;
+    position: relative
 }
 
 .project-card:hover {
     transform: scale(1.05);
-}
-
-.proj1 {
-    background-image: linear-gradient(40deg, rgba(28, 255, 28, 0.883), rgba(0,255,0,0) 30%), url('../img/passwordgenerator.jpg');
-    background-position: center;
-    background-size: cover;
 }
 
 .other-project-heading {
@@ -266,11 +270,7 @@ span.bracket {
     text-align: center;
 }
 
-.tech-categories {
-    background-color: var(--categories-color);
-}
-
-.other-project-links {
+.other-project-desc {
     width: 100%;
     background-color: rgba(21, 24, 21, 0.5);
     padding: 1em 2em;
@@ -281,28 +281,16 @@ span.bracket {
     font-size: 2rem;
 }
 
-span.category {
-    margin-inline: 0.6rem;
-    letter-spacing: 0.2rem;
-}
-
-.other-project-desc {
+.other-project-desc p {
     text-align: center;
 }
 
-.project-btn {
-    width: 10rem;
-    border: solid var(--primary-text-color) 1px;
-    border-radius: 3px;
-    background-color: transparent;
-    padding: 0.5em;
-    margin: 0.5rem;
-    font-size: 1rem;
-}
+/* Other project background images */
 
-.project-btn:hover {
-    cursor: pointer;
-    background-color: rgba(0, 250, 54, 0.3);
+.proj1 {
+    background-image: linear-gradient(40deg, rgba(28, 255, 28, 0.883), rgba(0,255,0,0) 30%), url('../img/passwordgenerator.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .proj2 {
@@ -321,6 +309,14 @@ span.category {
     background-image: linear-gradient(350deg, rgba(255, 28, 58, 0.883), rgba(0,255,0,0) 40%), url('../img/chat.jpeg');
     background-position: center;
     background-size: cover;
+}
+
+/* anchor tag in projects covers whole div so the whole container
+becomes a clickable link */
+a.proj-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 995px) {
