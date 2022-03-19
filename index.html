@@ -17,12 +17,18 @@
 <body>
 
     <header>
-        <img class="logo" src="assets/img/logo.png" alt="signature logo">
+        <div>
+            <img class="logo" src="assets/img/logo.png" alt="signature logo">
+            <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="resume"><a href="">Resume</a></button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -62,14 +68,15 @@
 
             <!-- column 3 (or row 3 in mobile) -->
             <div class="featured-col col-3">
-                <h3>FALLOUT 3</h3>
+                <h3>GARY'S BAD JOKES GENERATOR</h3>
                 <div class="tech-categories">
-                    <span class="category">React</span>
+                    <span class="category">jQuery</span>
                     <span class="category">Bootstrap</span>
-                    <span class="category">Node</span>
+                    <span class="category">JavaScript(ES6)</span>
                 </div>
-                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur provident facilis perspiciatis aperiam alias tempora eos neque? Possimus vitae nobis sed ut doloremque tempore in autem, repellendus natus velit quae.</p>
-                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit dolor sit amet..</p>
+                <p class="featured-desc">Gary loves Bad Joke Friday.</p>
+                <p class="featured-desc">Uses the JokeAPI REST Api to generate random jokes with the click of a button. Local storage is utilized to store and display saved jokes in a separate page.</p>
+                <p class="featured-desc">Now, Gary will never run out of jokes for Bad Joke Friday.</p>
             </div>
             <a class="proj-link"href="https://www.google.com/" target="_blank"></a>
             
@@ -81,17 +88,17 @@
             <!-- 1st project in other projects row -->
             <article class="project-card proj1">
                 <div class="other-project-heading">
-                    <h3>PASSWORD GENERATOR</h3>
+                    <h3>TIMED CODE QUIZ</h3>
                     <div class="tech-categories">
-                        <span class="category">React</span>
-                        <span class="category">Bootstrap</span>
-                        <span class="category">Node</span>
+                        <span class="category">HTML</span>
+                        <span class="category">CSS</span>
+                        <span class="category">JavaScript (ES6)</span>
                     </div>
                 </div>
                 <div class="other-project-desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum </p>
+                    <p>A timed code quiz on JavaScript fundamentals.</p>
                 </div>
-                <a class="proj-link"href="https://www.google.com/" target="_blank"></a>
+                <a class="proj-link"href="https://nvsco-10.github.io/timed-code-quiz/" target="_blank"></a>
             </article>
 
             <!-- 2nd project in other projects row -->
@@ -101,13 +108,13 @@
                     <div class="tech-categories">
                         <span class="category">HTML</span>
                         <span class="category">CSS</span>
-                        <span class="category">Vanilla JS</span>
+                        <span class="category">JavaScript (ES6)</span>
                     </div>
                 </div>
                 <div class="other-project-desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum </p>
+                    <p>Uses OpenWeatherMap API to fetch the current and future weather conditions of a given city.</p>
                 </div>
-                <a class="proj-link"href="https://www.google.com/" target="_blank"></a>
+                <a class="proj-link"href="https://nvsco-10.github.io/weather-dashboard/" target="_blank"></a>
             </article>
 
             <!-- 3rd project in other projects row -->
@@ -158,7 +165,7 @@
             </div>
 
             <div class="contact-info">
-                <p class="email">thisismyemail@email.com</p>
+                <p class="email">neemavelasco@gmail.com</p>
                 <section class="socials">
                     <a class="social-links" href="https://github.com/nvsco-10" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                     <a class="social-links" href="https://www.linkedin.com/in/neemavelasco/" target="_blank"><i class="fa-brands fa-linkedin"></i>Let's Connect</a>
@@ -169,6 +176,6 @@
 
     </section>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
