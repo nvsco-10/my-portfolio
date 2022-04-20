@@ -447,7 +447,7 @@ a.live {
 }
 
 .proj4 {
-    background-image: linear-gradient(350deg, rgba(255, 28, 58, 0.883), rgba(0,255,0,0) 40%), url('../img/chat.jpeg');
+    background-image: linear-gradient(350deg, rgba(167, 174, 33, 0.883), rgba(83, 96, 11, 0) 40%);
     background-position: center;
     background-size: cover;
 }
