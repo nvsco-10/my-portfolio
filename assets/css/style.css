@@ -435,13 +435,13 @@ a.live {
 }
 
 .proj2 {
-    background-image: linear-gradient(350deg, rgba(13, 138, 106, 0.883), rgba(94, 161, 216, 0.4) 50%);
+    background-image: linear-gradient(350deg, rgba(222, 235, 232, 0.883), rgba(89, 113, 133, 0.4) 50%);
     background-position: center;
     background-size: cover;
 }
 
 .proj3 {
-    background-image: linear-gradient(350deg, rgba(1, 22, 22, 0.883), rgba(7, 26, 7, 0.5) 80%), url('../img/techblog.jpg');
+    background-image: linear-gradient(350deg, rgba(179, 221, 174, 0.883), rgba(7, 26, 7, 0.5) 80%);
     background-position: center;
     background-size: cover;
 }
