@@ -25,13 +25,13 @@ a {
     color: inherit
 }
 
-p, button {
+p, .link-btn, button {
     font-size: 1.2rem;
     line-height: 1.5;
     color: var(--primary-text-color);
 }
 
-button {
+.link-btn, button  {
     background-color: transparent;
     border: solid 1px var(--primary-text-color);
     border-radius: 3px;
@@ -39,7 +39,7 @@ button {
     text-align: center;
 }
 
-button:hover {
+.link-btn:hover {
     background-color: var(--categories-color);
     cursor: pointer;
 }
@@ -152,7 +152,7 @@ button.toggle {
         display: block;
     }
 
-    button.resume {
+    a.resume {
         margin: 0.5em auto 0;
     }
 
@@ -364,11 +364,11 @@ span.category {
     margin: 1rem 0 0.5rem;
 }
 
-.btn-container button {
+.btn-container a {
     padding-inline: 2rem;
 }
 
-button.live {
+a.live {
     margin-right: 1rem;
 }
 
