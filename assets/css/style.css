@@ -323,7 +323,7 @@ span.category {
 }
 
 .featured-col.col-1 {
-    background-image: url('../img/garysbadjokes.PNG');
+    background-image: url('../img/techitout2.PNG');
     background-position: center;
     background-size: cover;
     margin-right: 1rem;
@@ -336,13 +336,13 @@ span.category {
 }
 
 .featured-img-box.box1 {
-    background-image: url('../img/garyjoke.PNG');
+    background-image: url('../img/techitout1.PNG');
     background-position: center;
     background-size: cover;
 }
 
 .featured-img-box.box2 {
-    background-image: url('../img/jokesapiPNG.PNG');
+    background-image: url('../img/techitout3.PNG');
     background-size: cover;
 }
 
